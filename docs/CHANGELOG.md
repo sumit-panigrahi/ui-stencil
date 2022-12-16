@@ -3,4 +3,4 @@
 
 ### Bug Fixes
 
-* **readme.md:** reset ,checking pre-release ([e35f971](https://github.com/sumit-panigrahi/wc-stencil/commit/e35f971315154c5dabcd7399ac438c9df9a2cbfe))
+* **readme.md:** reset ,checking pre-release ([e35f971](https://github.com/sumit-panigrahi/ui-stencil/commit/e35f971315154c5dabcd7399ac438c9df9a2cbfe))
