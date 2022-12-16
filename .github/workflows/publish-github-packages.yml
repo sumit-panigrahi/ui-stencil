@@ -1,0 +1,30 @@
+name: Stencil UI
+
+on:
+  push:
+    branches:
+     - master
+     - dev
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Node
+        uses: actions/setup-node@v3.5.1
+        with:
+          node-version: "16.x"
+          cache: 'yarn'
+      - run: yarn build:ci
+      - run: yarn build:stencil
+      - run: yarn build:release
+        env:
+         GITHUB_TOKEN: ${{secrets.GH_TOKEN}}
+         NPM_TOKEN: ${{secrets.NPM_TOKEN}}
+        

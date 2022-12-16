@@ -1,0 +1,32 @@
+{
+    "tagFormat": "${version}",
+    "branches": [
+      {"name":"master","prerelease":false},
+      {"name":"dev","prerelease":true}
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      ["@semantic-release/npm", {
+        "npmPublish": true,
+        "tarballDir": "pack"
+      }],
+      [
+        "@semantic-release/changelog",
+        {
+          "changelogFile": "docs/CHANGELOG.md"
+        }
+      ],
+      ["@semantic-release/github", {
+        "assets": ["pack/*.tgz"]
+      }
+    ],
+    [
+			"@semantic-release/git",
+			{
+        "assets": ["docs/CHANGELOG.md"],
+				"message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+			}
+		]
+    ]
+}

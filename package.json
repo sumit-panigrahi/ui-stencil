@@ -1,0 +1,78 @@
+{
+  "name": "wc-stencil",
+  "version": "0.0.0",
+  "description": "Stencil JS Web Components",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.js",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs",
+  "types": "dist/types/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/wc-stencil/wc-stencil.esm.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sumit-panigrahi/wc-stencil.git"
+  },
+  "files": [
+    "dist/",
+    "loader/"
+  ],
+  "scripts": {
+    "D E F A U L T": "::::::::::::::::::::::::::::::::::::::::::::::::::::::::",
+    "build": "stencil build --docs",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "generate": "stencil generate",
+    "D E V": ":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::",
+    "start:dev":"yarn start:stencil & yarn start:storybook",
+    "start:stencil":"stencil build --watch",
+    "start:storybook":"start-storybook -p 3000",
+    "prepare": "husky install",
+    "commit": "cz",
+    "C I / C D": ":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::",
+    "build:ci": "yarn install --frozen-lockfile --ignore-scripts",
+    "build:clean": "rimraf dist www loader node_modules",
+    "build:stencil": "stencil build",
+    "build:release": "semantic-release",
+    "build:storybook": "build-storybook"
+  },
+  "dependencies": {
+    "@stencil/core": "^2.13.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.5",
+    "@semantic-release/changelog": "^6.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "@storybook/addon-actions": "^6.5.14",
+    "@storybook/addon-essentials": "^6.5.14",
+    "@storybook/addon-interactions": "^6.5.14",
+    "@storybook/addon-links": "^6.5.14",
+    "@storybook/builder-webpack4": "^6.5.14",
+    "@storybook/html": "^6.5.14",
+    "@storybook/manager-webpack4": "^6.5.14",
+    "@storybook/testing-library": "^0.0.13",
+    "@types/jest": "^27.0.3",
+    "babel-loader": "^8.3.0",
+    "conventional-changelog-conventionalcommits": "^5.0.0",
+    "cz-conventional-changelog": "3.3.0",
+    "husky": "^8.0.0",
+    "jest": "^27.4.5",
+    "jest-cli": "^27.4.5",
+    "puppeteer": "^10.0.0",
+    "rimraf": "^3.0.2",
+    "semantic-release": "^19.0.5"
+  },
+  "license": "MIT",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && npx cz --hook || true"
+    }
+  }
+}
