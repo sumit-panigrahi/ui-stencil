@@ -1,3 +1,10 @@
+# [1.0.0-dev.3](https://github.com/sumit-panigrahi/ui-stencil/compare/1.0.0-dev.2...1.0.0-dev.3) (2022-12-22)
+
+
+### Bug Fixes
+
+* **bump:** npm release check ([931b798](https://github.com/sumit-panigrahi/ui-stencil/commit/931b79893ae938130c5bec92264c80bb4fe7b6bf))
+
 # [1.0.0-dev.2](https://github.com/sumit-panigrahi/ui-stencil/compare/1.0.0-dev.1...1.0.0-dev.2) (2022-12-16)
 
 
