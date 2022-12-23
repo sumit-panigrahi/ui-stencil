@@ -1,3 +1,15 @@
+# [1.0.0-dev.4](https://github.com/sumit-panigrahi/ui-stencil/compare/1.0.0-dev.3...1.0.0-dev.4) (2022-12-23)
+
+
+### Features
+
+* **releaserc:** added package.json to releaserc ([32f33d1](https://github.com/sumit-panigrahi/ui-stencil/commit/32f33d179acd6f56ea64021bff546633faf16386))
+
+
+### BREAKING CHANGES
+
+* **releaserc:** checking uncommit issue of package.json
+
 # [1.0.0-dev.3](https://github.com/sumit-panigrahi/ui-stencil/compare/1.0.0-dev.2...1.0.0-dev.3) (2022-12-22)
 
 
