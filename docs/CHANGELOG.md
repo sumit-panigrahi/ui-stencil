@@ -1,3 +1,10 @@
+## [2.0.1-dev.1](https://github.com/sumit-panigrahi/ui-stencil/compare/2.0.0...2.0.1-dev.1) (2022-12-23)
+
+
+### Bug Fixes
+
+* **master-to-dev:** merge ([3b99156](https://github.com/sumit-panigrahi/ui-stencil/commit/3b991567e62a3147e2599bbebb57a7af4763446d))
+
 # [2.0.0](https://github.com/sumit-panigrahi/ui-stencil/compare/1.0.0...2.0.0) (2022-12-23)
 
 
