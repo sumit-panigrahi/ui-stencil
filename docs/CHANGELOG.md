@@ -1,9 +1,20 @@
-# [1.0.0-dev.5](https://github.com/sumit-panigrahi/ui-stencil/compare/1.0.0-dev.4...1.0.0-dev.5) (2022-12-23)
+# [2.0.0](https://github.com/sumit-panigrahi/ui-stencil/compare/1.0.0...2.0.0) (2022-12-23)
 
 
 ### Bug Fixes
 
+* **merge conflict:** checking issue ([13e3c92](https://github.com/sumit-panigrahi/ui-stencil/commit/13e3c92d75c4de2d1010088bcd2a2e419bf372d8))
 * **merge conflict:** resolving ([b8839dc](https://github.com/sumit-panigrahi/ui-stencil/commit/b8839dcdd067f8859a47a7c55ce9e06e52fedfed))
+
+
+### Features
+
+* **releaserc:** added package.json to releaserc ([32f33d1](https://github.com/sumit-panigrahi/ui-stencil/commit/32f33d179acd6f56ea64021bff546633faf16386))
+
+
+### BREAKING CHANGES
+
+* **releaserc:** checking uncommit issue of package.json
 
 # [1.0.0-dev.4](https://github.com/sumit-panigrahi/ui-stencil/compare/1.0.0-dev.3...1.0.0-dev.4) (2022-12-23)
 
